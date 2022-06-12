@@ -25,24 +25,42 @@
           <div class="text-xl my-8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, omnis! Atque consequatur aliquid excepturi illo quia, possimus explicabo animi eos error nihil nisi accusantium repudiandae obcaecati magnam rerum? Quam, dicta.
           </div>
+          <div>
+            {{name}}
+          </div>
         </div>
       </div>
     </section>
   </div>
 </template>
+<script setup lang="ts">
+//     SAMPLE GET THROUGH API
+// const {data}: {data:any} = await useFetch("/api/hello")
+// const { data } = await useAsyncData("asd", () =>
+//   $fetch("http://localhost:1337/api/items")
+// );
+// console.log(data);
+// console.log("data");
 
-<script lang="ts">
-// import type { Home } from '~/types'
-// import type { Strapi4Response } from '@nuxtjs/strapi'
+import type { Item } from "~/types";
+import type { Strapi4Response } from "@nuxtjs/strapi";
 
-// const { find } = useStrapi4()
+const { find } = useStrapi4();
 
-// const response = await find<Strapi4Response<Home>>('home')
-
-// console.log(response)
-// console.log("this is it")
+const res = await find<Strapi4Response<Item>>("items", {
+  filters: {
+    key: {
+      $eq: "name",
+    },
+  },
+});
+const name = res.data[0].attributes.value
+console.log(name);
 </script>
-
+<script lang="ts">
+export default {
+  layout: "default",
+};
+</script> 
 <style>
-
 </style>
