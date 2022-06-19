@@ -1,22 +1,12 @@
 <template>
   <div>
-    <section class="md:h-[100vh] flex_center">
+    <section>
       <div class="container mx-auto">
-        <div class="text-center py-10">
-          <h1 class="text-4xl font-semibold uppercase">
-            It's me, Jovylle
+        <div class="text-center py-16">
+          <h1 class="text-9xl">
+            This is me
             <!-- {{response.data.attributes.Title}} -->
-            <!-- <i class="bx bx-hot"></i>
-            <i class="bx bxs-hot"></i>
-            <i class="bx bxl-facebook-square"></i> -->
           </h1>
-          <p class="text-m4 py-3">
-            A Full-Stack Web Developer
-          </p>
-          <button class="rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
-            See my CV
-            <i class='bx bxs-download'></i>
-          </button>
         </div>
       </div>
     </section>
@@ -64,7 +54,7 @@ const res = await find<Strapi4Response<Item>>("items", {
     },
   },
 });
-const name = res.data[0].attributes.value;
+const name = res.data[0].attributes.value
 console.log(name);
 </script>
 <script lang="ts">

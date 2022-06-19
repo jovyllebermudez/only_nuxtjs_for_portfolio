@@ -1,13 +1,54 @@
 <template>
-  <div class="bg-ternary-light">
+  <div class="bg-ternary-light text-lg">
     <section>
       <div class="container mx-auto">
-        <div class="py-12 flex justify-between">
-          <div class="font-bold text-3xl">
-            JovJov
+        <div class="py-12 flex items-center justify-between">
+          <div class="font-bold flex_center text-3xl my_hover px-2">
+            <NuxtLink
+              class=""
+              to="/"
+            >
+              W
+              <i class='bx bxs-dog'></i>
+              W
+            </NuxtLink>
           </div>
-          <div class=" text-2xl">
-            Buttons Buttons Buttons
+          <div class=" font-bold hidden md:flex">
+            <NuxtLink
+              class="flex_center px-7 my_hover1 inline-flex "
+              to="/about"
+            >
+              About me
+            </NuxtLink>
+            <NuxtLink
+              class="flex_center px-7 my_hover1 inline-flex "
+              to="/about"
+            >
+              Projects
+            </NuxtLink>
+            <NuxtLink
+              class="flex_center px-7 my_hover1 inline-flex "
+              to="/about"
+            >
+              Contact
+            </NuxtLink>
+          </div>
+          <div class="block">
+            <button class="px-3">
+              <i class='bx bx-menu'></i>
+            </button>
+          </div>
+          <div class=" text-base text-primary-light">
+            <NuxtLink
+              to="/contact"
+              class=""
+            >
+              <button class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
+                Email
+                <i class='bx bxs-party'></i>
+                Me
+              </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -25,19 +66,5 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      Footer section
-      <div class="bg-primary-light"> primary-light</div>
-      <div class="bg-secondary-light"> secondary-light</div>
-      <div class="bg-ternary-light"> ternary-light</div>
-      <div class="bg-primary-dark text-primary-light"> primary-dark</div>
-      <div class="bg-secondary-dark text-secondary-light"> secondary-dark</div>
-      <div class="bg-ternary-dark text-ternary-light"> ternary-dark</div>
-      <div class="bg-m1 "> m1</div>
-      <div class="bg-m2 "> m2</div>
-      <div class="bg-m3 "> m3</div>
-      <div class="bg-m4 "> m4</div>
-      <div class="bg-m5 "> m5</div>
-    </section> -->
   </div>
 </template>
