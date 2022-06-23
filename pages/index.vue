@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="md:h-[100vh] flex_center">
-      <div class="container mx-auto">
+      <div class="container mx-auto ">
         <div class="text-center py-10">
           <h1 class="text-4xl font-semibold uppercase">
             It's me, Jovylle
@@ -18,26 +18,40 @@
             <i class='bx bxs-download'></i>
           </button>
         </div>
+        <!-- <div>
+          <img class="rounded-xl" src="/hero_img.jpeg" alt="programmer person">
+        </div> -->
       </div>
     </section>
     <section>
-      <div class="container mx-auto">
-        <div class="text-center py-14">
-          <div class="text-4xl my-6 font-bold">
-            Hey there. I'm Jovylle Bermudez
-          </div>
-          <div class="text-xl my-8">
-            Hey there. I'm Jovylle Bermudez
-          </div>
-          <div class="text-xl my-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, omnis! Atque consequatur aliquid excepturi illo quia, possimus explicabo animi eos error nihil nisi accusantium repudiandae obcaecati magnam rerum? Quam, dicta.
-          </div>
-          <div class="text-xl my-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, omnis! Atque consequatur aliquid excepturi illo quia, possimus explicabo animi eos error nihil nisi accusantium repudiandae obcaecati magnam rerum? Quam, dicta.
-          </div>
-          <div>
-            {{name}}
-          </div>
+      <div class="container text-center">
+        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
+          Projects
+        </h2>
+        <p class="text-center text-lg my-8">See beautiful projects, that shows in your dreams</p>
+        <!-- <p>Search projects by title or by text from description</p> -->
+        <div class="flex flex-wrap justify-center">
+          <!-- container -->
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+        <button class="my-8 rounded-lg bg-m4 text-primary-light py-4 px-8">
+          More Projects
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="container my-10">
+        <h2 class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8">
+          Contact Me
+        </h2>
+        <div class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1">
+          <i class='bx bxl-facebook-circle'></i>
+          <i class='bx bxl-github'></i>
+          <i class='bx bxl-dev-to'></i>
+          <i class='bx bxl-google'></i>
         </div>
       </div>
     </section>

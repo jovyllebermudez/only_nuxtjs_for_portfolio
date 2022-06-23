@@ -33,8 +33,8 @@
               Contact
             </NuxtLink>
           </div>
-          <div class="block">
-            <button class="px-3">
+          <div class="block md:hidden">
+            <button class="px-3 ">
               <i class='bx bx-menu'></i>
             </button>
           </div>
@@ -58,10 +58,12 @@
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex justify-between">
           <div>
-            Logo
+            <i class='bx bxs-copyright' ></i>
+            2022
+            Jovylle Bermudez Web Developer
           </div>
           <div>
-            Buttons Buttons Buttons
+            Developed by Me, Myself and I
           </div>
         </div>
       </div>
