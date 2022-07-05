@@ -1,8 +1,15 @@
 <template>
   <div>
-    <section class="md:h-[100vh] flex_center">
-      <div class="container mx-auto ">
-        <div class="text-center py-10">
+    <section class="md:h-[80vh] flex_center py-8">
+      <div class="container mx-auto block sm:flex_center">
+        <div class="px-10">
+          <img
+            class="rounded-2xl max-h-[500px]"
+            src="/me_face.jpg"
+            alt="programmer person"
+          >
+        </div>
+        <div class="text-center px-10 py-10">
           <h1 class="text-4xl font-semibold uppercase">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
@@ -18,12 +25,23 @@
             <i class='bx bxs-download'></i>
           </button>
         </div>
-        <!-- <div>
-          <img class="rounded-xl" src="/hero_img.jpeg" alt="programmer person">
-        </div> -->
       </div>
     </section>
-    <section>
+    <section
+      class="md:h-[60vh] flex_center"
+      id="about"
+    >
+      <div class="container text-center ">
+        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
+          About me
+        </h2>
+        <p class="">
+          I am Jovylle, can help you in building or maintaining your website on either Front End or Back End.
+          Through the years of working in this amazing field, I have faced enough challenges to learn the technical solutions to help your team.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
       <div class="container text-center">
         <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
           Projects
@@ -42,16 +60,27 @@
         </button>
       </div>
     </section>
-    <section>
+    <section
+      class="md:h-[60vh] flex_center"
+      id="contact"
+    >
       <div class="container my-10">
         <h2 class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8">
           Contact Me
         </h2>
         <div class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1">
-          <i class='bx bxl-facebook-circle'></i>
-          <i class='bx bxl-github'></i>
-          <i class='bx bxl-dev-to'></i>
-          <i class='bx bxl-google'></i>
+          <a href="https://www.facebook.com/twero">
+            <i class='bx bxl-facebook-circle'></i>
+          </a>
+          <a href="https://github.com/jovyllebermudez">
+            <i class='bx bxl-github'></i>
+          </a>
+          <!-- <a href="">
+            <i class='bx bxl-dev-to'></i>
+          </a> -->
+          <a href="https://www.linkedin.com/in/jovyllebermudez/">
+            <i class='bx bxl-linkedin'></i>
+          </a>
         </div>
       </div>
     </section>

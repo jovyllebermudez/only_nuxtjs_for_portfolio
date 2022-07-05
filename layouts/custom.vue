@@ -14,24 +14,24 @@
             </NuxtLink>
           </div>
           <div class=" font-bold hidden md:flex">
-            <NuxtLink
+            <a
               class="flex_center px-7 my_hover1 inline-flex "
-              to="/about"
+              href="#about"
             >
               About me
-            </NuxtLink>
-            <NuxtLink
+            </a>
+            <a
               class="flex_center px-7 my_hover1 inline-flex "
-              to="/about"
+              href="#projects"
             >
               Projects
-            </NuxtLink>
-            <NuxtLink
+            </a>
+            <a
               class="flex_center px-7 my_hover1 inline-flex "
-              to="/about"
+              href="#contact"
             >
               Contact
-            </NuxtLink>
+            </a>
           </div>
           <div class="block md:hidden">
             <button class="px-3 ">
@@ -39,8 +39,8 @@
             </button>
           </div>
           <div class=" text-base text-primary-light">
-            <NuxtLink
-              to="/contact"
+            <a
+              href="mailto:jovyllebermudez@gmail.com"
               class=""
             >
               <button class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
@@ -48,7 +48,7 @@
                 <i class='bx bxs-party'></i>
                 Me
               </button>
-            </NuxtLink>
+            </a>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
     <slot />
     <section>
       <div class="container mx-auto">
-        <div class="pt-14 pb-10 flex justify-between">
+        <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
           <div>
             <i class='bx bxs-copyright' ></i>
             2022
