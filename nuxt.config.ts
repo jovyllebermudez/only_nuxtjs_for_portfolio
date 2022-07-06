@@ -4,17 +4,17 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      routes: ['/api/hello', '/api/mystrapi']
+      routes: ['/api/hello']
     }
   },
-  // ssr: false,
+  ssr: false,
   buildModules: ['@nuxtjs/strapi'],
-  strapi: {
-    url: process.env.STRAPI_URL || 'http://localhost:1337',
-    prefix: '/api',
-    version: 'v4',
-    cookie: {},
-  },
+  // strapi: {
+  //   url: process.env.STRAPI_URL || 'http://localhost:1337',
+  //   prefix: '/api',
+  //   version: 'v4',
+  //   cookie: {},
+  // },
   build: {
     postcss: {
       postcssOptions: require("./postcss.config.js"),

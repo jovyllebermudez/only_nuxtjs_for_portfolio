@@ -26,7 +26,7 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, omnis! Atque consequatur aliquid excepturi illo quia, possimus explicabo animi eos error nihil nisi accusantium repudiandae obcaecati magnam rerum? Quam, dicta.
           </div>
           <div>
-            {{name}}
+            <!-- {{name}} -->
           </div>
         </div>
       </div>
@@ -42,25 +42,25 @@
 // console.log(data);
 // console.log("data");
 
-import type { Item } from "~/types";
-import type { Strapi4Response } from "@nuxtjs/strapi";
+// import type { Item } from "~/types";
+// import type { Strapi4Response } from "@nuxtjs/strapi";
 
-const { find } = useStrapi4();
+// const { find } = useStrapi4();
 
-const res = await find<Strapi4Response<Item>>("items", {
-  filters: {
-    key: {
-      $eq: "name",
-    },
-  },
-});
-const name = res.data[0].attributes.value
-console.log(name);
-</script>
-<script lang="ts">
-export default {
-  layout: "default",
-};
+// const res = await find<Strapi4Response<Item>>("items", {
+//   filters: {
+//     key: {
+//       $eq: "name",
+//     },
+//   },
+// });
+// const name = res.data[0].attributes.value
+// console.log(name);
+// </script>
+// <script lang="ts">
+// export default {
+//   layout: "default",
+// };
 </script> 
 <style>
 </style>
