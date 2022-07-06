@@ -10,6 +10,9 @@
           >
         </div>
         <div class="text-center px-10 py-10">
+        <div>
+          {{ohName}}
+        </div>
           <h1 class="text-4xl font-semibold uppercase">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
@@ -86,34 +89,39 @@
     </section>
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
 //     SAMPLE GET THROUGH API
 // const {data}: {data:any} = await useFetch("/api/hello")
 // const { data } = await useAsyncData("asd", () =>
-//   $fetch("http://localhost:1337/api/items")
+//   $fetch("https://jojostrapibackend.herokuapp.com/api/items/6")
+//   // $fetch("http://localhost:1337/api/items")
 // );
-// console.log(data);
-// console.log("data");
+// console.log(data._rawValue.data.attributes.value);
+// console.log("_rawValue");
+const { strapi } = await $fetch('/api/mystrapi');
+// const ress = await $fetch('/api/hello');
+console.log(strapi)
+console.log("strapi")
+// import type { Item } from "~/types";
+// import type { Strapi4Response } from "@nuxtjs/strapi";
 
-import type { Item } from "~/types";
-import type { Strapi4Response } from "@nuxtjs/strapi";
+// const { find } = useStrapi4();
 
-const { find } = useStrapi4();
-
-const res = await find<Strapi4Response<Item>>("items", {
-  filters: {
-    key: {
-      $eq: "name",
-    },
-  },
-});
-const name = res.data[0].attributes.value;
-console.log(name);
+// const res = await find<Strapi4Response<Item>>("items", {
+//   filters: {
+//     key: {
+//       $eq: "name",
+//     },
+//   },
+// });
+// console.log(res);
+let ohName = '';
+// ohName = data._rawValue.data.attributes.value
+// if(res?.data.length > 0){
+//   name = res.data[0].attributes.value;
+// }else{
+//   name = "oh no no name, cant get it";
+// }
 </script>
-<script lang="ts">
-export default {
-  layout: "default",
-};
-</script> 
 <style>
 </style>
