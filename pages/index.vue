@@ -10,9 +10,6 @@
           >
         </div>
         <div class="text-center px-10 py-10">
-          <div>
-            {{ohName}}
-          </div>
           <h1 class="text-4xl font-semibold uppercase">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
@@ -87,60 +84,30 @@
         </div>
       </div>
     </section>
-    {{mymystrapi}}
   </div>
 </template>
 <script setup>
-//     SAMPLE GET THROUGH API
-// const {data}: {data:any} = await useFetch("/api/hello")
-// const { data } = await useAsyncData("strapi", () =>
-//   $fetch('https://jojostrapibackend.herokuapp.com/api/items', { parseResponse: JSON.parse })
-// );
 
-const { data: mymystrapi } = await useFetch('https://jojostrapibackend.herokuapp.com/api/items',{pick:['data']})
-const {data:asdd}= await $fetch('https://jojostrapibackend.herokuapp.com/api/items')
+const {data}= await $fetch('https://jojostrapibackend.herokuapp.com/api/items')
 
-console.log(asdd)
-console.log("asdd")
-console.log(mymystrapi)
-console.log("mymystrapi")
+console.log(data)
+console.log("data")
+
+// this one is gubot response
+// const { data: mymystrapi } = await useFetch('https://jojostrapibackend.herokuapp.com/api/items',{pick:['data']})
+// console.log(mymystrapi)
+// console.log("mymystrapi")
+
   let strapi = {}
-  // data.forEach(item => {
-  //   strapi[item.attributes.key] = item.attributes.value
-  // });
+  data.forEach(item => {
+    strapi[item.attributes.key] = item.attributes.value
+  });
   
-// console.log(strapi)
-// console.log("strapi")
-// console.log(data._rawValue.data.attributes.value);
-// console.log("_rawValue");
 const ressmystrapi = await $fetch('/api/mystrapi');
 const ress = await $fetch('/api/hello');
 console.log(ressmystrapi)
 console.log(ress)
 console.log("server apis")
-// import type { Item } from "~/types";
-// import type { Strapi4Response } from "@nuxtjs/strapi";
-
-// const { find } = useStrapi4();
-
-// const res = await find<Strapi4Response<Item>>("items", {
-//   filters: {
-//     key: {
-//       $eq: "name",
-//     },
-//   },
-// });
-// console.log(res);
-let ohName = '';
-if(strapi.name){
-  ohName=strapi.name
-}
-// ohName = data._rawValue.data.attributes.value
-// if(res?.data.length > 0){
-//   name = res.data[0].attributes.value;
-// }else{
-//   name = "oh no no name, cant get it";
-// }
 </script>
 <style>
 </style>
