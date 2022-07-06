@@ -113,7 +113,7 @@ console.log("mymystrapi")
 // console.log("strapi")
 // console.log(data._rawValue.data.attributes.value);
 // console.log("_rawValue");
-const {strapi:ressmystrapi} = await $fetch('/api/mystrapi');
+const ressmystrapi = await $fetch('/api/mystrapi');
 const ress = await $fetch('/api/hello');
 console.log(ressmystrapi)
 console.log(ress)
