@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      routes: ['/api/hello']
+      routes: ['/api/hello', '/api/mystrapi']
     }
   },
   ssr: false,

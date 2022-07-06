@@ -98,22 +98,26 @@
 // );
 
 const { data: mymystrapi } = await useFetch('https://jojostrapibackend.herokuapp.com/api/items',{pick:['data']})
+const {data:asdd}= await $fetch('https://jojostrapibackend.herokuapp.com/api/items')
 
+console.log(asdd)
+console.log("asdd")
 console.log(mymystrapi)
-console.log(mymystrapi[0])
 console.log("mymystrapi")
   let strapi = {}
   // data.forEach(item => {
   //   strapi[item.attributes.key] = item.attributes.value
   // });
-console.log(strapi)
-console.log("strapi")
+  
+// console.log(strapi)
+// console.log("strapi")
 // console.log(data._rawValue.data.attributes.value);
 // console.log("_rawValue");
-// const { strapi } = await $fetch('/api/mystrapi');
+const {strapi:ressmystrapi} = await $fetch('/api/mystrapi');
 const ress = await $fetch('/api/hello');
+console.log(ressmystrapi)
 console.log(ress)
-console.log("ress")
+console.log("server apis")
 // import type { Item } from "~/types";
 // import type { Strapi4Response } from "@nuxtjs/strapi";
 
