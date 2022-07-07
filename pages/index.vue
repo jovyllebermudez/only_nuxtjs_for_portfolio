@@ -49,7 +49,7 @@
         <p class="text-center text-lg my-8">
           Works, Challenges,
           Click here to see complete list
-          <a href="#">
+          <a href="https://jojoblog.netlify.app">
             <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
               see all
             </button>
@@ -63,7 +63,7 @@
           <ProjectCard />
           <ProjectCard />
         </div>
-        <a href="#">
+        <a href="https://jojoblog.netlify.app">
           <button class="my-8 rounded-lg bg-m4 text-primary-light py-4 px-8">
             See All
           </button>
