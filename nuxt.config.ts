@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       routes: ['/api/hello', '/api/mystrapi']
     }
   },
-  ssr: false,
+  // ssr: false,
   buildModules: ['@nuxtjs/strapi'],
   // strapi: {
   //   url: process.env.STRAPI_URL || 'http://localhost:1337',
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     },
   },
   css: [
-    "~/assets/css/tailwind.css",
+    "@/assets/css/tailwind.css",
     'boxicons/css/boxicons.min.css'
   ],
 })

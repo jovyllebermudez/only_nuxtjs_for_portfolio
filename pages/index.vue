@@ -46,7 +46,15 @@
         <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
           Projects
         </h2>
-        <p class="text-center text-lg my-8">See beautiful projects, that shows in your dreams</p>
+        <p class="text-center text-lg my-8">
+          Works, Challenges,
+          Click here to see complete list
+          <a href="#">
+            <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
+              see all
+            </button>
+          </a>
+        </p>
         <!-- <p>Search projects by title or by text from description</p> -->
         <div class="flex flex-wrap justify-center">
           <!-- container -->
@@ -55,9 +63,11 @@
           <ProjectCard />
           <ProjectCard />
         </div>
-        <button class="my-8 rounded-lg bg-m4 text-primary-light py-4 px-8">
-          More Projects
-        </button>
+        <a href="#">
+          <button class="my-8 rounded-lg bg-m4 text-primary-light py-4 px-8">
+            See All
+          </button>
+        </a>
       </div>
     </section>
     <section
@@ -87,27 +97,28 @@
   </div>
 </template>
 <script setup>
+const { data } = await $fetch(
+  'https://jojostrapibackend.herokuapp.com/api/items'
+);
 
-const {data}= await $fetch('https://jojostrapibackend.herokuapp.com/api/items')
-
-console.log(data)
-console.log("data")
+console.log(data);
+console.log('data');
 
 // this one is gubot response
 // const { data: mymystrapi } = await useFetch('https://jojostrapibackend.herokuapp.com/api/items',{pick:['data']})
 // console.log(mymystrapi)
 // console.log("mymystrapi")
 
-  let strapi = {}
-  data.forEach(item => {
-    strapi[item.attributes.key] = item.attributes.value
-  });
-  
+let strapi = {};
+data.forEach((item) => {
+  strapi[item.attributes.key] = item.attributes.value;
+});
+
 const ressmystrapi = await $fetch('/api/mystrapi');
 const ress = await $fetch('/api/hello');
-console.log(ressmystrapi)
-console.log(ress)
-console.log("server apis")
+console.log(ressmystrapi);
+console.log(ress);
+console.log('server apis');
 </script>
 <style>
 </style>
