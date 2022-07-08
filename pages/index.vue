@@ -20,10 +20,12 @@
           <p class="text-m4 py-3">
             A Full-Stack Web Developer
           </p>
-          <button class="rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
-            See my CV
-            <i class='bx bxs-download'></i>
-          </button>
+          <a href="https://docs.google.com/document/d/1gQ7Un-xRGeJH87S0NIZSp0b_RMlVLGAGrLkT9FOwKhk/edit?usp=sharing">
+            <button class="rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
+              See my CV / Resume
+              <i class='bx bxs-right-top-arrow-circle'></i>
+            </button>
+          </a>
         </div>
       </div>
     </section>
