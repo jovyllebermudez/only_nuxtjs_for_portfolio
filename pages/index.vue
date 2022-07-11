@@ -78,11 +78,14 @@
     >
       <div class="container my-10">
         <h2 class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8">
-          Contact Me
+          Contact Me / Socials
         </h2>
         <div class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1">
           <a href="https://www.facebook.com/twero">
             <i class='bx bxl-facebook-circle'></i>
+          </a>
+          <a href="mailto:jovyllebermudez.com">
+            <i class='bx bxl-gmail'></i>
           </a>
           <a href="https://github.com/jovyllebermudez">
             <i class='bx bxl-github'></i>
