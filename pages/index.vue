@@ -84,7 +84,7 @@
           <a href="https://www.facebook.com/twero">
             <i class='bx bxl-facebook-circle'></i>
           </a>
-          <a href="mailto:jovyllebermudez.com">
+          <a href="mailto:jovyllebermudez@gmail.com">
             <i class='bx bxl-gmail'></i>
           </a>
           <a href="https://github.com/jovyllebermudez">
