@@ -63,7 +63,7 @@
             Jovylle Bermudez Web Developer
           </div>
           <div>
-            Developed by Me, Myself and I
+            Developed by Me, Myself and I. Using NuxtJS3
           </div>
         </div>
       </div>
