@@ -57,12 +57,12 @@
     <section>
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
-          <div>
+          <div class="my_hover">
             <i class='bx bxs-copyright' ></i>
             2022
             Jovylle Bermudez Web Developer
           </div>
-          <div>
+          <div class="my_hover">
             Developed by Me, Myself and I. Using NuxtJS3
           </div>
         </div>

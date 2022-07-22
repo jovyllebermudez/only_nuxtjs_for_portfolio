@@ -4,13 +4,13 @@
       <div class="container mx-auto block sm:flex_center">
         <div class="px-10">
           <img
-            class="rounded-2xl max-h-[500px]"
+            class="rounded-2xl max-h-[500px] my_hover"
             src="/me_face.jpg"
             alt="programmer person"
           >
         </div>
         <div class="text-center px-10 py-10">
-          <h1 class="text-4xl font-semibold uppercase">
+          <h1 class="text-4xl font-semibold uppercase my_hover">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
             <!-- <i class="bx bx-hot"></i>
@@ -21,7 +21,7 @@
             A Full-Stack Web Developer
           </p>
           <a class="" href="#">
-            <button class="hover:line-through hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
+            <button class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
               See my CV / Resume
               <i class='bx bxs-right-top-arrow-circle'></i>
             </button>
@@ -34,10 +34,10 @@
       id="about"
     >
       <div class="container text-center ">
-        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
+        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
           About me
         </h2>
-        <p class="">
+        <p class="my_hover">
           I am Jovylle, can help you in building or maintaining your website on either Front End or Back End.
           Through the years of working in this amazing field, I have faced enough challenges to learn the technical solutions to help your team.
         </p>
@@ -45,28 +45,29 @@
     </section>
     <section id="projects">
       <div class="container text-center">
-        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8">
+        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
           Projects
         </h2>
-        <p class="text-center text-lg my-8">
+        <p class="text-center text-lg my-6 my_hover">
           Works, Challenges,
           Click here to see complete list
+        </p>
+        <div class="my-4 my_hover">
           <a href="https://jojoblog.netlify.app">
             <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
               see all
             </button>
           </a>
-        </p>
+        </div>
         <!-- <p>Search projects by title or by text from description</p> -->
         <div class="flex flex-wrap justify-center">
           <!-- container -->
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard class="my_hover"/>
+          <ProjectCard class="my_hover"/>
+          <ProjectCard class="my_hover"/>
         </div>
         <a href="https://jojoblog.netlify.app">
-          <button class="my-8 rounded-lg bg-m4 text-primary-light py-4 px-8">
+          <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
             See All
           </button>
         </a>
@@ -77,24 +78,24 @@
       id="contact"
     >
       <div class="container my-10">
-        <h2 class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8">
+        <h2 class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8 my_hover">
           Contact Me / Socials
         </h2>
         <div class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1">
           <a href="https://www.facebook.com/twero">
-            <i class='bx bxl-facebook-circle'></i>
+            <i class='my_hover bx bxl-facebook-circle'></i>
           </a>
           <a href="mailto:jovyllebermudez@gmail.com">
-            <i class='bx bxl-gmail'></i>
+            <i class='my_hover bx bxl-gmail'></i>
           </a>
           <a href="https://github.com/jovyllebermudez">
-            <i class='bx bxl-github'></i>
+            <i class='my_hover bx bxl-github'></i>
           </a>
           <!-- <a href="">
-            <i class='bx bxl-dev-to'></i>
+            <i class='my_hover bx bxl-dev-to'></i>
           </a> -->
           <a href="https://www.linkedin.com/in/jovyllebermudez/">
-            <i class='bx bxl-linkedin'></i>
+            <i class='my_hover bx bxl-linkedin'></i>
           </a>
         </div>
       </div>
