@@ -38,7 +38,7 @@
           About me
         </h2>
         <p class="my_hover">
-          I, Jovylle, can help you to build or mentain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced decent quantity of challenges that makes a good help in  technical task in your team.
+          I, Jovylle, can help you to build or maintain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced decent quantity of challenges that makes a good help in  technical task in your team.
         </p>
       </div>
     </section>
