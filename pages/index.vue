@@ -62,7 +62,7 @@
           Click here to see complete list
         </p>
         <div class="my-4 my_hover">
-          <a href="https://jojoblog.netlify.app">
+          <a href="https://alimyon.dev/">
             <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
               see all
             </button>
@@ -75,7 +75,7 @@
           <ProjectCard class="my_hover" />
           <ProjectCard class="my_hover" />
         </div>
-        <a href="https://jojoblog.netlify.app">
+        <a href="https://alimyon.dev/">
           <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
             See All
           </button>
