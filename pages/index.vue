@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section class="md:h-[80vh] flex_center py-8">
+  <div class="space-y-10 lg:space-y-32">
+    <section class="md:h-[80vh] flex_center py-8 ">
       <div class="container mx-auto block sm:flex_center">
         <div class="px-10">
           <img
@@ -9,7 +9,7 @@
             alt="programmer person"
           >
         </div>
-        <div class="text-center px-10 py-10">
+        <div class="text-center px-10 py-10 space-y-4">
           <h1 class="text-4xl font-semibold uppercase my_hover">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
@@ -20,7 +20,11 @@
           <p class="text-m4 py-3">
             A Full-Stack Web Developer
           </p>
-          <a class="" href="#">
+          <HelloSvg class="w-[200px] h-[100px] mx-auto" />
+          <a
+            class=""
+            href="#"
+          >
             <button class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base">
               See my CV / Resume
               <i class='bx bxs-right-top-arrow-circle'></i>
@@ -30,15 +34,18 @@
       </div>
     </section>
     <section
-      class="md:h-[60vh] flex_center"
+      class="md:min-h-[60vh] flex_center"
       id="about"
     >
       <div class="container text-center ">
         <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
           About me
         </h2>
+        <div>
+          <Coding class="h-[200px] mx-auto" />
+        </div>
         <p class="my_hover">
-          I, Jovylle, can help you to build or maintain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced decent quantity of challenges that makes a good help in  technical task in your team.
+          I, Jovylle, can help you to build or maintain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced decent quantity of challenges that makes a good help in technical task in your team.
         </p>
       </div>
     </section>
@@ -47,6 +54,9 @@
         <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
           Projects
         </h2>
+        <div>
+          <PointingTo class="h-[200px] mx-auto" />
+        </div>
         <p class="text-center text-lg my-6 my_hover">
           Works, Challenges,
           Click here to see complete list
@@ -61,9 +71,9 @@
         <!-- <p>Search projects by title or by text from description</p> -->
         <div class="flex flex-wrap justify-center">
           <!-- container -->
-          <ProjectCard class="my_hover"/>
-          <ProjectCard class="my_hover"/>
-          <ProjectCard class="my_hover"/>
+          <ProjectCard class="my_hover" />
+          <ProjectCard class="my_hover" />
+          <ProjectCard class="my_hover" />
         </div>
         <a href="https://jojoblog.netlify.app">
           <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
@@ -129,10 +139,8 @@ useHead({
   title: 'Jovylle Bermudez',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   charset: 'utf-8',
-  meta: [
-    { name: 'description', content: 'Genuinely addicted to coding.' }
-  ],
-})
+  meta: [{ name: 'description', content: 'Genuinely addicted to coding.' }]
+});
 </script>
 <style>
 </style>
