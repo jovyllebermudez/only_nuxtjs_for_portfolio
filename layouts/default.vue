@@ -58,9 +58,7 @@
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
           <div class="my_hover">
-            <i class='bx bxs-copyright' ></i>
-            2022
-            Jovylle Bermudez Web Developer
+            Copyright © 2022 , || jov ||
           </div>
           <div class="my_hover">
             This site is made up of messy Nuxtjs3 codes
