@@ -63,7 +63,7 @@
             Jovylle Bermudez Web Developer
           </div>
           <div class="my_hover">
-            Developed by Me, Myself and I. Using NuxtJS3
+            This site is made up of messy Nuxtjs3 codes
           </div>
         </div>
       </div>
