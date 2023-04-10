@@ -15,6 +15,7 @@
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
+    "@nuxtjs/sanity": "^1.6.0",
     "boxicons": "^2.1.2"
   }
 }
