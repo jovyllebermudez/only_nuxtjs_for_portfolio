@@ -10,9 +10,10 @@ export default defineNuxtConfig({
   // ssr: false,
   // buildModules: ["@nuxtjs/strapi"],
   modules: ["@nuxtjs/sanity"],
+  target: "static",
   sanity: {
     projectId: "x9czj6ra",
-    dataset: "production"
+    dataset: "production",
   },
   // strapi: {
   //   url: process.env.STRAPI_URL || 'http://localhost:1337',
