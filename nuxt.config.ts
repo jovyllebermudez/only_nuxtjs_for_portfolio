@@ -8,7 +8,12 @@ export default defineNuxtConfig({
     },
   },
   // ssr: false,
-  buildModules: ["@nuxtjs/strapi"],
+  // buildModules: ["@nuxtjs/strapi"],
+  modules: ["@nuxtjs/sanity"],
+  sanity: {
+    projectId: "x9czj6ra",
+    dataset: "production"
+  },
   // strapi: {
   //   url: process.env.STRAPI_URL || 'http://localhost:1337',
   //   prefix: '/api',
