@@ -45,7 +45,7 @@
           <Coding class="h-[200px] mx-auto" />
         </div>
         <p class="my_hover">
-          I, Jovylle, can help you to build or maintain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced decent quantity of challenges that makes a good help in technical task in your team.
+          I, Jovylle, can help you to build or maintain your system on either Front End or Back End. Through the years of working in this actively changing field, I have experienced a good quantity of challenges that equips me with the skills to be one of your best assets.
         </p>
       </div>
     </section>
@@ -64,22 +64,21 @@
         <div class="my-4 my_hover">
           <a href="https://alimyon.dev/">
             <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
-              see all
+              See Projects
             </button>
           </a>
         </div>
         <!-- <p>Search projects by title or by text from description</p> -->
-        <div class="flex flex-wrap justify-center">
-          <!-- container -->
+        <!-- <div class="flex flex-wrap justify-center">
           <ProjectCard class="my_hover" />
           <ProjectCard class="my_hover" />
           <ProjectCard class="my_hover" />
-        </div>
-        <a href="https://alimyon.dev/">
+        </div> -->
+        <!-- <a href="https://alimyon.dev/">
           <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
             See All
           </button>
-        </a>
+        </a> -->
       </div>
     </section>
     <section
