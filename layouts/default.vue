@@ -16,7 +16,7 @@
           <div class=" font-bold hidden md:flex">
             <a
               class="flex_center px-7 my_hover1 inline-flex "
-              href="#about"
+              href="/#about"
             >
               About me
             </a>
@@ -28,9 +28,15 @@
             </a>
             <a
               class="flex_center px-7 my_hover1 inline-flex "
-              href="#contact"
+              href="/#contact"
             >
               Contact
+            </a>
+            <a
+              class="flex_center px-7 my_hover1 inline-flex "
+              href="/uses"
+            >
+              Uses
             </a>
           </div>
           <div class="block md:hidden">
@@ -58,7 +64,7 @@
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
           <div class="my_hover">
-            Copyright © 2022 , || jov ||
+            Copyright © 2022 || jov ||
           </div>
           <div class="my_hover">
             This site is made up of messy Nuxtjs3 codes
