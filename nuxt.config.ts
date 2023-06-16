@@ -1,4 +1,5 @@
-// import { defineNuxtConfig } from 'nuxt'
+// import { defineNuxtConfig } from 'nuxt' 
+// weird freaken error.
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -7,13 +8,16 @@ export default defineNuxtConfig({
       routes: ["/api/hello", "/api/mystrapi"],
     },
   },
-  // ssr: false,
+  ssr: false,
   // buildModules: ["@nuxtjs/strapi"],
-  modules: ["@nuxtjs/sanity"],
-  target: "static",
+  modules: [
+    "@nuxtjs/sanity", 
+    // "~/modules/sanity" // removing this the modules, don't work at all 
+  ],
   sanity: {
     projectId: "x9czj6ra",
     dataset: "production",
+    useCdn: true,
   },
   // strapi: {
   //   url: process.env.STRAPI_URL || 'http://localhost:1337',
