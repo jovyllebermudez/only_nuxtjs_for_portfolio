@@ -59,7 +59,9 @@
         </div>
       </div>
     </section>
-    <slot />
+    <main>
+      <nuxt />
+    </main>
     <section>
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
@@ -75,3 +77,9 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  // Components, methods, or other properties can be defined here
+}
+</script>

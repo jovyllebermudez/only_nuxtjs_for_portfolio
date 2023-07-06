@@ -12,8 +12,6 @@
     <div class="bg-m3 "> m3</div>
     <div class="bg-m4 "> m4</div>
     <div class="bg-m5 "> m5</div>
-  </section>
-  <section>
     <div class="container mx-auto">
       <div class="text-center py-14">
         <div class="text-4xl my-6 font-bold">

@@ -18,10 +18,11 @@
 //   res.end();
 // }
 
-export default defineEventHandler((event) => {
-  return {
-    api: 'works'
-  }
-})
+// bellow commented today XD
+// export default defineEventHandler((event) => {
+//   return {
+//     api: 'works'
+//   }
+// })
 
 //test edit
