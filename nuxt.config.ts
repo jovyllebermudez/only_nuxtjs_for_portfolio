@@ -8,11 +8,12 @@ export default defineNuxtConfig({
       routes: ["/api/hello", "/api/mystrapi"],
     },
   },
+  server: true,
   ssr: false,
   // buildModules: ["@nuxtjs/strapi"],
   modules: [
-    "@nuxtjs/sanity", 
-    // "~/modules/sanity" // removing this the modules, don't work at all 
+    "@nuxtjs/sanity",
+    // "~/modules/sanity" // removing this the modules, don't work at all
   ],
   sanity: {
     projectId: "x9czj6ra",
