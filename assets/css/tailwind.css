@@ -1,4 +1,41 @@
 @tailwind base;
+@layer base {
+  h1 {
+    @apply text-5xl font-extrabold;
+  }
+
+  h2 {
+    @apply text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  h4 {
+    @apply text-2xl font-bold;
+  }
+
+  h5 {
+    @apply text-xl font-bold;
+  }
+
+  h6 {
+    @apply text-lg font-bold;
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-400 pl-4 italic;
+  }
+
+  /* a {
+    @apply text-blue-600 underline;
+  } */
+}
 @tailwind components;
 @tailwind utilities;
 
