@@ -3,6 +3,8 @@ import { ref } from 'vue';
 const query = `*[_type == "portfolioProject"]{
   _id,
   title,
+  slug,
+  mainImage,
   body
 }`;
 const posts = ref([]);
@@ -77,13 +79,22 @@ fetchDataAsync();
         <div v-if="posts.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
           <NuxtLink  
             v-for="post in posts" :key="post._id" 
-            to="/projects/single-project"
+            :to="'/projects/'+post.slug"
             class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
             aria-label="Single Project"
           >
             <div>
+
+              <SanityImage
+                v-if="post.mainImage"
+                :asset-id="post.mainImage.asset._ref"
+                alt="project.title"
+                class="rounded-t-xl border-none"
+                auto="format"
+              />
               <img
-                src="https://nuxtjs-tailwindcss-portfolio.netlify.app/images/web-project-2.jpg"
+                v-else
+                src="https://raw.githubusercontent.com/jovyllebermudez/static/d37ee2dee7175a22031457d711dae74922faf3be/placeholder.png"
                 alt="project.title"
                 class="rounded-t-xl border-none"
               />
@@ -92,7 +103,6 @@ fetchDataAsync();
               <p
                 class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
               >
-                
                 {{ post.title }}
               </p>
               <span
