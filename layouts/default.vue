@@ -22,7 +22,7 @@
             </a>
             <a
               class="flex_center px-7 my_hover1 inline-flex "
-              href="#projects"
+              href="/projects"
             >
               Projects
             </a>
