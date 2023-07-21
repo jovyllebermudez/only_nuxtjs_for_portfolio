@@ -1,7 +1,7 @@
 <template>
   <div class="bg-ternary-light text-lg">
     <section>
-      <div class="container mx-auto">
+      <div class="sm:container sm:mx-auto">
         <div class="py-12 flex items-center justify-between">
           <div class="font-bold flex_center text-3xl my_hover px-2">
             <NuxtLink

@@ -20,8 +20,8 @@ fetchDataAsync();
 </script>
 <template>
   <div>
-    <h1>Posts:</h1>
-    <div>Loading...</div>
+    <!-- <h1>Posts:</h1>
+    <div>Loading...</div> -->
 
     <div class="container mx-auto">
       <!-- Projects grid -->
@@ -43,11 +43,11 @@ fetchDataAsync();
             Search projects by title or filter by category
           </h3>
           <div
-            class="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-2"
+            class="flex justify-between border-b border-stone-300 dark:border-secondary-dark pb-3 gap-2"
           >
             <div class="flex justify-between gap-2">
-              <span
-                class="hidden sm:block bg-primary-light dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer"
+              <!-- <span
+                class="hidden sm:block bg-stone-border-stone-300 dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer"
               >
                 <i
                   data-feather="search"
@@ -63,10 +63,10 @@ fetchDataAsync();
                 required=""
                 placeholder="Search Projects"
                 aria-label="Name"
-              />
+              /> -->
             </div>
             <select
-              class="font-general-medium px-4 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+              class="font-general-medium px-4 py-2 border-1 border-stone-300 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
             >
               <option value class="text-sm sm:text-md">All Projects</option>
               <option class="sm:text-md">other Projects</option>
@@ -79,12 +79,11 @@ fetchDataAsync();
         <div v-if="posts.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
           <NuxtLink  
             v-for="post in posts" :key="post._id" 
-            :to="'/projects/'+post.slug"
+            :to="'/project/'+post.slug.current"
             class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
             aria-label="Single Project"
           >
             <div>
-
               <SanityImage
                 v-if="post.mainImage"
                 :asset-id="post.mainImage.asset._ref"
