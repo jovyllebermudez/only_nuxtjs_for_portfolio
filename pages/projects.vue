@@ -3,6 +3,7 @@ import { ref } from 'vue';
 const query = `*[_type == "portfolioProject"]{
   _id,
   title,
+  subTitle,
   slug,
   mainImage,
   body
@@ -40,7 +41,6 @@ fetchDataAsync();
           <h3
             class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl font-normal mb-4"
           >
-            Search projects by title or filter by category
           </h3>
           <div
             class="flex justify-between border-b border-stone-300 dark:border-secondary-dark pb-3 gap-2"
@@ -106,7 +106,7 @@ fetchDataAsync();
               </p>
               <span
                 class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
-                >CATEGORY</span
+                >{{ post.subTitle }}</span
               >
             </div>
           </NuxtLink>
