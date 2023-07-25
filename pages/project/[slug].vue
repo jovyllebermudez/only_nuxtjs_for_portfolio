@@ -9,7 +9,9 @@ const query = `*[_type == "portfolioProject" && slug.current == $slug][0]{
   title,
   slug,
   mainImage,
-  body
+  body,
+  description,
+  techTag
 }`;
 const posts = ref({});
 const fetchDataAsync = async () => {
@@ -67,10 +69,11 @@ fetchDataAsync();
             >
           </div>
           <div class="flex items-center">
-            <i
+            <!-- <i
               data-feather="tag"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i>
+            ></i> -->
+            <i class='bx bxs-purchase-tag'></i>
             <span
               class="
                 font-general-medium
@@ -100,8 +103,7 @@ fetchDataAsync();
       <!-- Project info -->
       <div class="block sm:flex gap-0 sm:gap-10 mt-14">
         <!-- Single project left section details -->
-        <div class="w-full sm:w-1/3 text-left">
-          <!-- Single project client details -->
+        <!-- <div class="w-full sm:w-1/3 text-left">
           <div class="mb-7">
             <p
               class="
@@ -131,7 +133,6 @@ fetchDataAsync();
             </ul>
           </div>
 
-          <!-- Single project objectives -->
           <div class="mb-7">
             <p
               class="
@@ -154,7 +155,6 @@ fetchDataAsync();
             </p>
           </div>
 
-          <!-- Single project technologies -->
           <div class="mb-7">
             <p
               class="
@@ -177,7 +177,6 @@ fetchDataAsync();
             </p>
           </div>
 
-          <!-- Single project social sharing -->
           <div>
             <p
               class="
@@ -210,7 +209,7 @@ fetchDataAsync();
               ></a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Single project right section details -->
         <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
@@ -224,7 +223,7 @@ fetchDataAsync();
               mb-7
             "
           >
-            details title
+            Details
           </p>
           <p
            
@@ -235,7 +234,7 @@ fetchDataAsync();
               dark:text-ternary-light
             "
           >
-           project details
+           {{posts.description}}
           </p>
         </div>
       </div>
