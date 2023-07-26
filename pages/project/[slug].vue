@@ -7,6 +7,7 @@ console.log('slug', slug);
 const query = `*[_type == "portfolioProject" && slug.current == $slug][0]{
   _id,
   title,
+  subTitle,
   slug,
   mainImage,
   body,
@@ -52,10 +53,7 @@ fetchDataAsync();
         </p>
         <div class="flex">
           <div class="flex items-center mr-10">
-            <i
-              data-feather="clock"
-              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i>
+            <i class='bx bxs-purchase-tag'></i>
             <span
               class="
                 font-general-medium
@@ -65,15 +63,15 @@ fetchDataAsync();
                 dark:text-primary-light
               "
               >
-          {{posts.title}}</span
+          {{posts.subTitle}}</span
             >
           </div>
-          <div class="flex items-center">
+          <!-- <div class="flex items-center"> -->
             <!-- <i
               data-feather="tag"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
             ></i> -->
-            <i class='bx bxs-purchase-tag'></i>
+            <!-- <i class='bx bxs-purchase-tag'></i>
             <span
               class="
                 font-general-medium
@@ -84,7 +82,7 @@ fetchDataAsync();
               "
               >TAG</span
             >
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -93,10 +91,18 @@ fetchDataAsync();
         <div
           class="mb-10 sm:mb-0"
         >
-          <img
+          <SanityImage
+            v-if="posts.mainImage"
+            :asset-id="posts.mainImage.asset._ref"
+            alt="project image"
+            class=" rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+            auto="format"
+          />
+          <!-- <img
             :src="'https://nuxtjs-tailwindcss-portfolio.netlify.app/images/web-project-2.jpg'"
             class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-          />
+          /> -->
+
         </div>
       </div>
 
@@ -236,7 +242,7 @@ fetchDataAsync();
           >
 
           <SanityContent :blocks="posts.body" />
-           {{posts.description}}
+           <!-- {{posts.description}} -->
           </p>
         </div>
       </div>

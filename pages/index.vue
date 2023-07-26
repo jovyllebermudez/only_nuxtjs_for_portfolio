@@ -49,7 +49,7 @@
         </p>
       </div>
     </section>
-    <section id="projects">
+    <!-- <section id="projects">
       <div class="container text-center">
         <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
           Projects
@@ -67,7 +67,7 @@
               See Projects
             </button>
           </a>
-        </div>
+        </div> -->
         <!-- <p>Search projects by title or by text from description</p> -->
         <!-- <div class="flex flex-wrap justify-center">
           <ProjectCard class="my_hover" />
@@ -79,8 +79,8 @@
             See All
           </button>
         </a> -->
-      </div>
-    </section>
+      <!-- </div>
+    </section> -->
     <section
       class="md:h-[60vh] flex_center"
       id="contact"
