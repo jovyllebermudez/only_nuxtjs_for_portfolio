@@ -1,4 +1,41 @@
 @tailwind base;
+@layer base {
+  h1 {
+    @apply text-3xl font-extrabold my-12;
+  }
+
+  h2 {
+    @apply text-2xl font-bold my-12;;
+  }
+
+  h3 {
+    @apply text-xl font-bold my-12;;
+  }
+
+  h4 {
+    @apply text-lg font-bold;
+  }
+
+  h5 {
+    @apply text-lg font-bold;
+  }
+
+  h6 {
+    @apply font-bold;
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-400 pl-4 italic;
+  }
+
+  /* a {
+    @apply text-blue-600 underline;
+  } */
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -7,10 +44,10 @@
     @apply text-lg text-primary-dark;
   }
   .my_hover1:hover {
-    @apply text-3xl ;
+    @apply text-3xl;
   }
   .my_hover:hover {
-    @apply scale-125  ;
+    @apply scale-125;
   }
   .my_hover1 {
     @apply transition-all duration-500;
@@ -22,6 +59,6 @@
     @apply flex items-center justify-center;
   }
   .container {
-    @apply max-w-[1024px] mx-auto
+    @apply px-12;
   }
 }

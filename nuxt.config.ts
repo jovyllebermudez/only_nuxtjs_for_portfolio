@@ -8,8 +8,8 @@ export default defineNuxtConfig({
       routes: ["/api/hello", "/api/mystrapi"],
     },
   },
-  server: true,
-  ssr: false,
+  // server: true, not sure about this anymore
+  ssr: true,
   // buildModules: ["@nuxtjs/strapi"],
   modules: [
     "@nuxtjs/sanity",
