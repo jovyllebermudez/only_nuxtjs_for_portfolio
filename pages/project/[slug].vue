@@ -213,7 +213,7 @@ fetchDataAsync();
 
         <!-- Single project right section details -->
         <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-          <p
+          <!-- <p
             class="
               font-general-medium
               text-primary-dark
@@ -224,7 +224,7 @@ fetchDataAsync();
             "
           >
             Details
-          </p>
+          </p> -->
           <p
            
             class="
@@ -234,6 +234,8 @@ fetchDataAsync();
               dark:text-ternary-light
             "
           >
+
+          <SanityContent :blocks="posts.body" />
            {{posts.description}}
           </p>
         </div>

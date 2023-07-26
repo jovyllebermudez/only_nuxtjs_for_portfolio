@@ -32,7 +32,7 @@ fetchDataAsync();
           <p
             class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
           >
-            Projects Portfolio
+            Projects
           </p>
         </div>
 
@@ -42,11 +42,11 @@ fetchDataAsync();
             class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl font-normal mb-4"
           >
           </h3>
-          <div
+          <!-- <div
             class="flex justify-between border-b border-stone-300 dark:border-secondary-dark pb-3 gap-2"
           >
             <div class="flex justify-between gap-2">
-              <!-- <span
+              <span
                 class="hidden sm:block bg-stone-border-stone-300 dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer"
               >
                 <i
@@ -63,7 +63,7 @@ fetchDataAsync();
                 required=""
                 placeholder="Search Projects"
                 aria-label="Name"
-              /> -->
+              />
             </div>
             <select
               class="font-general-medium px-4 py-2 border-1 border-stone-300 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
@@ -73,7 +73,7 @@ fetchDataAsync();
               <option class="sm:text-md">other Projects</option>
               <option class="sm:text-md">other Projects</option>
             </select>
-          </div>
+          </div> -->
         </div>
         <!-- Projects grid -->
         <div v-if="posts.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
@@ -83,12 +83,12 @@ fetchDataAsync();
             class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
             aria-label="Single Project"
           >
-            <div>
+            <div class="rounded-t-xl overflow-hidden">
               <SanityImage
                 v-if="post.mainImage"
                 :asset-id="post.mainImage.asset._ref"
                 alt="project.title"
-                class="rounded-t-xl border-none"
+                class=" border-none max-h-48 mx-auto"
                 auto="format"
               />
               <img
