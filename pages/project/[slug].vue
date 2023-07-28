@@ -53,7 +53,7 @@ fetchDataAsync();
           {{posts.title}}
         </p>
         <div class="flex">
-          <div class="flex items-center mr-10">
+          <div v-if="posts.subTitle" class="flex items-center mr-10">
             <i class='bx bxs-purchase-tag'></i>
             <span
               class="
@@ -64,10 +64,10 @@ fetchDataAsync();
                 dark:text-primary-light
               "
               >
-          {{posts.subTitle}}</span
+              {{posts.subTitle}}</span
             >
           </div>
-          <div class="flex items-center">
+          <div v-if="posts.publishedAt" class="flex items-center">
             <i class='bx bxs-time'></i>
             <span
               class="
