@@ -8,9 +8,10 @@
               class=""
               to="/"
             >
-              W
+            Home
+              <!-- W
               <i class='bx bxs-dog'></i>
-              W
+              W -->
             </NuxtLink>
           </div>
           <div class=" font-bold hidden md:flex">
@@ -26,12 +27,12 @@
             >
               Projects
             </a>
-            <a
+            <!-- <a
               class="flex_center px-7 my_hover1 inline-flex "
               href="/#contact"
             >
               Contact
-            </a>
+            </a> -->
             <a
               class="flex_center px-7 my_hover1 inline-flex "
               href="/uses"
@@ -45,16 +46,22 @@
             </button>
           </div>
           <div class=" text-base text-primary-light">
-            <a
+            <!-- <a
               href="mailto:jovyllebermudez@gmail.com"
               class=""
+            > -->
+            <NuxtLink
+              class=""
+              to="/#contact"
             >
               <button class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
-                Email
-                <i class='bx bxs-party'></i>
-                Me
+                Contacts
               </button>
-            </a>
+              <!-- W
+              <i class='bx bxs-dog'></i>
+              W -->
+            </NuxtLink>
+            <!-- </a> -->
           </div>
         </div>
       </div>
@@ -64,10 +71,10 @@
       <div class="container mx-auto">
         <div class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between">
           <div class="my_hover">
-            Copyright © 2022 || jov ||
+            Copyright © 2022 | Jovylle
           </div>
           <div class="my_hover">
-            This site is made up of messy Nuxtjs3 codes
+            Nuxtjs3 Vuejs3
           </div>
         </div>
       </div>
