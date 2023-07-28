@@ -12,7 +12,8 @@ const query = `*[_type == "portfolioProject" && slug.current == $slug][0]{
   mainImage,
   body,
   description,
-  techTag
+  techTag,
+  publishedAt
 }`;
 const posts = ref({});
 const fetchDataAsync = async () => {
@@ -66,12 +67,8 @@ fetchDataAsync();
           {{posts.subTitle}}</span
             >
           </div>
-          <!-- <div class="flex items-center"> -->
-            <!-- <i
-              data-feather="tag"
-              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i> -->
-            <!-- <i class='bx bxs-purchase-tag'></i>
+          <div class="flex items-center">
+            <i class='bx bxs-time'></i>
             <span
               class="
                 font-general-medium
@@ -80,9 +77,9 @@ fetchDataAsync();
                 text-primary-dark
                 dark:text-primary-light
               "
-              >TAG</span
+              >{{posts.publishedAt.split("-")[0]}}</span
             >
-          </div> -->
+          </div>
         </div>
       </div>
 

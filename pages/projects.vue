@@ -1,13 +1,14 @@
 <script setup>
 import { ref } from 'vue';
-const query = `*[_type == "portfolioProject"]{
+const query = `*[_type == "portfolioProject"] | order(publishedAt desc){
   _id,
   title,
   subTitle,
   slug,
   mainImage,
-  body
-}`;
+  body,
+  publishedAt
+} `;
 const posts = ref([]);
 const fetchDataAsync = async () => {
   try {
