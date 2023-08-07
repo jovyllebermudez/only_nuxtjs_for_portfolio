@@ -11,4 +11,11 @@ module.exports = {
     ".*\\.(vue)$": "@vue/vue3-jest",
   },
   transformIgnorePatterns: ["node_modules/(?!(nuxt3|unenv))"],
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+      esModuleInterop: true,
+    },
+  },
+  testMatch: ['<rootDir>/test/**/*.spec.(js|ts)'],
 };
