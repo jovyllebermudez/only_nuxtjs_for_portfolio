@@ -1,16 +1,16 @@
 <template>
   <div class="space-y-10 lg:space-y-32">
     <section class="md:h-[80vh] flex_center py-8 ">
-      <div class="container mx-auto block sm:flex_center">
-        <div class="px-10">
-          <nuxt-img
+      <div class="container mx-auto block md:flex_center">
+        <div class="px-10 md:px-0">
+          <img
             class="rounded-2xl max-h-[500px] my_hover"
+            style="margin: auto 0"
             src="/me_face.jpg"
             alt="programmer person"
-            loading="lazy" 
           />
         </div>
-        <div class="text-center px-10 py-10 space-y-4">
+        <div class="text-center px-10 py-10 space-y-4 flex items-center flex-col">
           <h1 class="text-4xl font-semibold uppercase my_hover">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
@@ -20,14 +20,12 @@
           </h1>
           <p class="text-m4 py-3">A Full-Stack Web Developer</p>
           <HelloSvg class="w-[200px] h-[100px] mx-auto" />
-          <a class="" href="#">
-            <button
-              class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-base"
-            >
-              See my CV / Resume
-              <i class="bx bxs-right-top-arrow-circle"></i>
-            </button>
-          </a>
+          <button
+            class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-sm flex items-center space-x-1 mx-auto"
+          >
+            <span>See CV/Resume</span>
+            <i class="bx bxs-right-top-arrow-circle"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -39,7 +37,7 @@
           About me
         </h2>
         <div>
-          <Coding class="h-[200px] mx-auto" />
+          <Coding class="h-[200px] mx-auto max-w-full" />
         </div>
         <p class="my_hover">
           I, Jovylle, can help you to build or maintain your system on either
