@@ -1,6 +1,6 @@
 <template>
   <div class="bg-ternary-light text-lg overflow-hidden">
-    <section>
+    <section class="max-w-[1280px] mx-auto">
       <div class="container sm:mx-auto">
         <div
           class="py-6 md:py-12 flex items-center justify-between flex-col sm:flex-row"
@@ -66,7 +66,7 @@
       </div>
     </section>
     <slot />
-    <section>
+    <section class="max-w-[1280px] mx-auto">
       <div class="container mx-auto">
         <div
           class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between"

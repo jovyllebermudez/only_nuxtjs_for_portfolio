@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-10 lg:space-y-32">
+  <div class="space-y-10 lg:space-y-32 max-w-[1280px] mx-auto">
     <section class="md:h-[80vh] flex_center py-8 ">
       <div class="container mx-auto block md:flex_center">
         <div class="px-10 md:px-0">
@@ -14,9 +14,6 @@
           <h1 class="text-4xl font-semibold uppercase my_hover">
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
-            <!-- <i class="bx bx-hot"></i>
-            <i class="bx bxs-hot"></i>
-            <i class="bx bxl-facebook-square"></i> -->
           </h1>
           <p class="text-m4 py-3">A Full-Stack Web Developer</p>
           <HelloSvg class="w-[200px] h-[100px] mx-auto" />
@@ -67,11 +64,6 @@
           </a>
         </div> -->
     <!-- <p>Search projects by title or by text from description</p> -->
-    <!-- <div class="flex flex-wrap justify-center">
-          <ProjectCard class="my_hover" />
-          <ProjectCard class="my_hover" />
-          <ProjectCard class="my_hover" />
-        </div> -->
     <!-- <a href="https://alimyon.dev/">
           <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
             See All
