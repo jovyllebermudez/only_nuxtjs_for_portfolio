@@ -3,7 +3,7 @@
     <section class="md:h-[80vh] flex_center py-8 ">
       <div class="container mx-auto block md:flex_center">
         <div class="px-10 md:px-0">
-          <img
+          <LazySanityImage
             class="rounded-2xl max-h-[500px] my_hover"
             style="margin: auto 0"
             src="/me_face.jpg"
@@ -102,6 +102,7 @@
   </div>
 </template>
 <script setup>
+
 // const { data } = await $fetch(
 //   'https://jojostrapibackend.herokuapp.com/api/items'
 // );
