@@ -6,7 +6,7 @@
           <LazySanityImage
             class="rounded-2xl max-h-[500px] my_hover"
             style="margin: auto 0"
-            src="/me_face.jpg"
+            src="/me_face-min.jpg"
             alt="programmer person"
           />
         </div>
