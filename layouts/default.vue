@@ -5,47 +5,49 @@
         <div
           class="py-6 md:py-12 flex items-center justify-between flex-col sm:flex-row"
         >
-          <div class="font-bold flex text-3xl my_hover px-2 justify-between w-full sm:w-auto">
-              <div class="opacity-0 sm:hidden">
-                <button class="px-3 ">
-                  <i class="bx bx-menu my-1"></i>
-                </button>
-              </div>
-              <NuxtLink class="text-center" to="/">
-                Home
-              </NuxtLink>
-              <div class="block sm:hidden text-right">
-                <button @click="isMenuOpen = !isMenuOpen" class="px-3 ">
-                  <i v-if="isMenuOpen" class="bx bx-x my-1"></i>
-                  <i v-if="!isMenuOpen" class="bx bx-menu my-1"></i>
-                </button>
-              </div>
+          <div
+            class="font-bold flex text-3xl my_hover px-2 justify-between w-full sm:w-auto"
+          >
+            <div class="opacity-0 sm:hidden">
+              <button class="px-3 ">
+                <i class="bx bx-menu my-1"></i>
+              </button>
+            </div>
+            <NuxtLink class="text-center" to="/"> Home </NuxtLink>
+            <div class="block sm:hidden text-right">
+              <button @click="isMenuOpen = !isMenuOpen" class="px-3 ">
+                <i v-if="isMenuOpen" class="bx bx-x my-1"></i>
+                <i v-if="!isMenuOpen" class="bx bx-menu my-1"></i>
+              </button>
+            </div>
           </div>
-          <div :class="['font-bold sm:flex my-5 sm:my-0 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']">
+          <div
+            :class="['font-bold sm:flex my-5 sm:my-0 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
+          >
             <a
               class="flex_center md:px-7 px-4 my_hover1 inline-flex whitespace-nowrap py-3 sm:py-0"
               href="/#about"
             >
               About me
             </a>
-            <a
+            <NuxtLink
               class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
-              href="/projects"
+              to="/projects"
             >
               Projects
-            </a>
+            </NuxtLink>
             <!-- <a
               class="flex_center md:px-7 px-4 my_hover1 inline-flex "
               href="/#contact"
             >
               Contact
             </a> -->
-            <a
+            <NuxtLink
               class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
-              href="/uses"
+              to="/uses"
             >
               Uses
-            </a>
+            </NuxtLink>
           </div>
           <div class="hidden sm:block text-base text-primary-light">
             <!-- <a
