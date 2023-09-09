@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     },
   },
   // server: true, not sure about this anymore
-  ssr: true,
+  ssr: false,
   // buildModules: ["@nuxtjs/strapi"],
   modules: [
     "@nuxtjs/sanity",
