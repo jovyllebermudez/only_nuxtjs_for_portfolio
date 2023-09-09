@@ -3,13 +3,14 @@
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  nitro: {
-    prerender: {
-      routes: ["/api/hello", "/api/mystrapi"],
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: ["/api/hello", "/api/mystrapi"],
+  //   },
+  // },
   // server: true, not sure about this anymore
   ssr: true,
+  prerender: true,
   // buildModules: ["@nuxtjs/strapi"],
   modules: [
     "@nuxtjs/sanity",
