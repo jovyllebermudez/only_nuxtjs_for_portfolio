@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const query = `*[_type == "portfolioProject"]{
+const query = `*[_type == "post"]{
   _id,
   title,
   body
