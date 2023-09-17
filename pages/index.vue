@@ -18,7 +18,7 @@
           <p class="text-m4 py-3">A Full-Stack Web Developer</p>
           <HelloSvg class="w-[200px] h-[100px] mx-auto" />
           <button
-            class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-sm flex items-center space-x-1 mx-auto"
+            id="resumebutton" class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-sm flex items-center space-x-1 mx-auto"
           >
             <span>See CV/Resume</span>
             <i class="bx bxs-right-top-arrow-circle"></i>
@@ -44,33 +44,6 @@
         </p>
       </div>
     </section>
-    <!-- <section id="projects">
-      <div class="container text-center">
-        <h2 class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover">
-          Projects
-        </h2>
-        <div>
-          <PointingTo class="h-[200px] mx-auto" />
-        </div>
-        <p class="text-center text-lg my-6 my_hover">
-          Works, Challenges,
-          Click here to see complete list
-        </p>
-        <div class="my-4 my_hover">
-          <a href="https://alimyon.dev/">
-            <button class="text-primary-light px-4 py-2 rounded-lg bg-m4">
-              See Projects
-            </button>
-          </a>
-        </div> -->
-    <!-- <p>Search projects by title or by text from description</p> -->
-    <!-- <a href="https://alimyon.dev/">
-          <button class="my-8 my_hover rounded-lg bg-m4 text-primary-light py-4 px-8">
-            See All
-          </button>
-        </a> -->
-    <!-- </div>
-    </section> -->
     <section class="md:h-[60vh] flex_center" id="contact">
       <div class="container my-10">
         <h2
@@ -81,19 +54,19 @@
         <div
           class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1"
         >
-          <a href="https://www.facebook.com/twero">
+          <a aria-label="facebook link" href="https://www.facebook.com/twero">
             <i class="my_hover bx bxl-facebook-circle"></i>
           </a>
-          <a href="mailto:jovyllebermudez@gmail.com">
+          <a aria-label="mail me" href="mailto:jovyllebermudez@gmail.com">
             <i class="my_hover bx bxl-gmail"></i>
           </a>
-          <a href="https://github.com/jovyllebermudez">
+          <a aria-label="github link" href="https://github.com/jovyllebermudez">
             <i class="my_hover bx bxl-github"></i>
           </a>
           <!-- <a href="">
             <i class='my_hover bx bxl-dev-to'></i>
           </a> -->
-          <a href="https://www.linkedin.com/in/jovyllebermudez/">
+          <a aria-label="linkedin link" href="https://www.linkedin.com/in/jovyllebermudez/">
             <i class="my_hover bx bxl-linkedin"></i>
           </a>
         </div>
