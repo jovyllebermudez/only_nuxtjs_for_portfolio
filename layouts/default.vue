@@ -9,13 +9,13 @@
             class="font-bold flex text-3xl my_hover px-2 justify-between w-full sm:w-auto"
           >
             <div class="opacity-0 sm:hidden">
-              <button class="px-3 ">
+              <button aria-label="justinvisiblebutton" id="idontknow" class="px-3 ">
                 <i class="bx bx-menu my-1"></i>
               </button>
             </div>
             <NuxtLink class="text-center" to="/"> Home </NuxtLink>
             <div class="block sm:hidden text-right">
-              <button @click="isMenuOpen = !isMenuOpen" class="px-3 ">
+              <button aria-label="show menu button" @click="isMenuOpen = !isMenuOpen" class="px-3 ">
                 <i v-if="isMenuOpen" class="bx bx-x my-1"></i>
                 <i v-if="!isMenuOpen" class="bx bx-menu my-1"></i>
               </button>
@@ -55,7 +55,7 @@
               class=""
             > -->
             <NuxtLink class="" to="/#contact">
-              <button class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
+              <button id="contactbutton" class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
                 Contacts
               </button>
               <!-- W
