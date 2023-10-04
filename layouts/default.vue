@@ -33,12 +33,12 @@
             <div
               :class="['font-bold sm:flex my-5 sm:my-0 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
             >
-              <a
+              <NuxtLink
                 class="flex_center md:px-7 px-4 my_hover1 inline-flex whitespace-nowrap py-3 sm:py-0"
-                href="/#about"
+                to="/about"
               >
                 About me
-              </a>
+              </NuxtLink>
               <NuxtLink
                 class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
                 to="/projects"
@@ -53,10 +53,6 @@
               </NuxtLink>
             </div>
             <div class="hidden sm:block text-base text-primary-light">
-              <!-- <a
-              href="mailto:jovyllebermudez@gmail.com"
-              class=""
-            > -->
               <NuxtLink class="" to="/contact">
                 <button
                   id="contactbutton"
@@ -64,11 +60,7 @@
                 >
                   Contacts
                 </button>
-                <!-- W
-              <i class='bx bxs-dog'></i>
-              W -->
               </NuxtLink>
-              <!-- </a> -->
             </div>
           </div>
         </div>
