@@ -1,4 +1,4 @@
-# jovyllebermudez.com main portfolio
+# jovyllebermudez.com portfolio made in Nuxtjs 3, and SanityIO headless CMS
 
 # Nuxt 3 Minimal Starter
 
