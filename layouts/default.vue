@@ -36,12 +36,6 @@
             >
               Projects
             </NuxtLink>
-            <!-- <a
-              class="flex_center md:px-7 px-4 my_hover1 inline-flex "
-              href="/#contact"
-            >
-              Contact
-            </a> -->
             <NuxtLink
               class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
               to="/uses"
@@ -54,7 +48,7 @@
               href="mailto:jovyllebermudez@gmail.com"
               class=""
             > -->
-            <NuxtLink class="" to="/#contact">
+            <NuxtLink class="" to="/contact">
               <button id="contactbutton" class=" scale-90 rounded-lg p-3 my_hover  bg-m4 px-4  ">
                 Contacts
               </button>
