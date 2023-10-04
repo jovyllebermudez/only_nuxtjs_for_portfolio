@@ -62,3 +62,7 @@
     @apply px-6 lg:px-12;
   }
 }
+
+div#__nuxt>div {
+    min-height: 100vh !important;
+}

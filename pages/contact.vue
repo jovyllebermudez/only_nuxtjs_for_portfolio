@@ -5,7 +5,7 @@
         <h2
           class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8 my_hover"
         >
-          Contact Me / Socials
+          Contact me / Socials
         </h2>
         <div
           class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1"
