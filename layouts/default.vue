@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-ternary-light text-lg overflow-hidden flex flex-col">
-    <div class="flex-1">
-      <section class="max-w-[1280px] mx-auto">
+  <div class="bg-ternary-light text-lg overflow-hidden flex flex-col tracking-wider">
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col min-h-[100vh]">
+      <section class="">
         <div class="container sm:mx-auto">
           <div
             class="py-6 md:py-12 flex items-center justify-between flex-col sm:flex-row"
@@ -34,19 +34,19 @@
               :class="['font-bold sm:flex my-5 sm:my-0 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
             >
               <NuxtLink
-                class="flex_center md:px-7 px-4 my_hover1 inline-flex whitespace-nowrap py-3 sm:py-0"
+                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex whitespace-nowrap py-3 sm:py-0"
                 to="/about"
               >
                 About me
               </NuxtLink>
               <NuxtLink
-                class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
+                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
                 to="/projects"
               >
                 Projects
               </NuxtLink>
               <NuxtLink
-                class="flex_center md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
+                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
                 to="/uses"
               >
                 Uses
@@ -65,18 +65,20 @@
           </div>
         </div>
       </section>
-      <slot />
-    </div>
-    <section class="max-w-[1280px] mx-auto footer-section w-[100%]">
-      <div class="container mx-auto">
-        <div
-          class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between"
-        >
-          <div class="my_hover">Copyright © {{currentYear}} | Jovylle</div>
-          <div class="my_hover">Nuxt3</div>
+      <section class="flex-1">
+        <slot />
+      </section>
+      <section class="footer-section w-[100%]">
+        <div class="container mx-auto">
+          <div
+            class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between"
+          >
+            <div class="my_hover">Copyright © {{currentYear}} | Jovylle</div>
+            <div class="my_hover"></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 

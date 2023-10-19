@@ -11,19 +11,19 @@
           class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1"
         >
           <a aria-label="facebook link" href="https://www.facebook.com/twero">
-            <i class="my_hover bx bxl-facebook-circle"></i>
+            <i class="my_hover bx bxl-facebook-circle text-m4"></i>
           </a>
           <a aria-label="mail me" href="mailto:jovyllebermudez@gmail.com">
-            <i class="my_hover bx bxl-gmail"></i>
+            <i class="my_hover bx bxl-gmail text-m4"></i>
           </a>
           <a aria-label="github link" href="https://github.com/jovyllebermudez">
-            <i class="my_hover bx bxl-github"></i>
+            <i class="my_hover bx bxl-github text-m4"></i>
           </a>
           <!-- <a href="">
             <i class='my_hover bx bxl-dev-to'></i>
           </a> -->
           <a aria-label="linkedin link" href="https://www.linkedin.com/in/jovyllebermudez/">
-            <i class="my_hover bx bxl-linkedin"></i>
+            <i class="my_hover bx bxl-linkedin text-m4"></i>
           </a>
         </div>
       </div>
