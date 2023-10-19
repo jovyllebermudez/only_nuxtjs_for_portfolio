@@ -22,8 +22,13 @@ fetchDataAsync();
 </script>
 <template>
   <div>
-
     <div class="container mx-auto">
+      <section>
+        <div class="space-x-10 text-center font-semibold">
+          <a class="underline" href="https://quickchatgpt.netlify.app/">Quick Chat Bot Tool</a>
+          <a class="underline" href="https://theremnant.netlify.app/">Christian Blog Site</a>
+        </div>
+      </section>
       <!-- Projects grid -->
       <section class="pt-10 sm:pt-14">
         <!-- Projects grid title -->
@@ -39,13 +44,16 @@ fetchDataAsync();
         <div class="mt-10 sm:mt-10">
           <h3
             class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl font-normal mb-4"
-          >
-          </h3>
+          ></h3>
         </div>
         <!-- Projects grid -->
-        <div v-if="posts.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-          <NuxtLink  
-            v-for="post in posts" :key="post._id" 
+        <div
+          v-if="posts.length"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
+        >
+          <NuxtLink
+            v-for="post in posts"
+            :key="post._id"
             :to="'/project/'+post.slug.current"
             class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
             aria-label="Single Project"
@@ -78,7 +86,10 @@ fetchDataAsync();
             </div>
           </NuxtLink>
         </div>
-        <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10" >
+        <div
+          v-else
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
+        >
           <div
             class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
           >
