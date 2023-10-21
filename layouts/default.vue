@@ -27,7 +27,7 @@
               </div>
             </div>
             <div
-              :class="['font-bold sm:flex my-5 sm:my-0 md:space-x-10 space-x-3 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
+              :class="['font-bold sm:flex my-5 sm:my-0 space-x-0 sm:space-x-3 md:space-x-10  divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
             >
               <NuxtLink
                 class="flex_center text-xl my_hover1 inline-flex py-3 sm:py-0 whitespace-nowrap"
@@ -91,7 +91,7 @@
 export default {
   data(){
     return{
-      darkMode: false,
+      darkMode: true,
       currentYear: new Date().getFullYear(),
       isMenuOpen: false
     }
