@@ -14,6 +14,7 @@ const fetchDataAsync = async () => {
   try {
     const response =  await useSanityQuery(query);
     posts.value =  response.data._rawValue;
+    console.log("posts", posts);
   } catch (error) {
     console.error(error);
   }
@@ -24,9 +25,13 @@ fetchDataAsync();
   <div>
     <div class="container mx-auto">
       <section>
-        <div class="space-x-10 text-center font-semibold">
-          <a class="underline" href="https://quickchatgpt.netlify.app/">Quick Chat Bot Tool</a>
-          <a class="underline" href="https://theremnant.netlify.app/">Christian Blog Site</a>
+        <div class="space-x-10 text-center ">
+          <a class="underline" href="https://quickchatgpt.netlify.app/"
+            >Quick Chat Bot Tool</a
+          >
+          <a class="underline" href="https://theremnant.netlify.app/"
+            >Christian Blog Site</a
+          >
         </div>
       </section>
       <!-- Projects grid -->
@@ -55,24 +60,34 @@ fetchDataAsync();
             v-for="post in posts"
             :key="post._id"
             :to="'/project/'+post.slug.current"
-            class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+            class="rounded-xl shadow-lg hover:shadow-xl overflow-hidden cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
             aria-label="Single Project"
           >
-            <div class="rounded-t-xl overflow-hidden">
+            <!-- <div v-if="post.mainImage" class="bg-cover bg-center h-64 w-64" :style="`background-image: url(${post.mainImage?.asset._ref});`"></div> -->
+             <div v-if="post.mainImage" class="bg-cover bg-center aspect-video w-full overflow-hidden">
               <SanityImage
-                v-if="post.mainImage"
                 :asset-id="post.mainImage.asset._ref"
                 alt="project.title"
-                class=" border-none max-h-48 mx-auto"
+                class=""
                 auto="format"
               />
+            </div>
+            <!-- <div class="rounded-t-xl overflow-hidden">
+              <div v-if="post.mainImage" class="bg-cover bg-center h-64 w-64">
+                <SanityImage
+                  :asset-id="post.mainImage.asset._ref"
+                  alt="project.title"
+                  class=""
+                  auto="format"
+                />
+              </div>
               <img
                 v-else
                 src="https://raw.githubusercontent.com/jovyllebermudez/static/d37ee2dee7175a22031457d711dae74922faf3be/placeholder.png"
                 alt="project.title"
                 class="rounded-t-xl border-none"
               />
-            </div>
+            </div> -->
             <div class="text-center px-4 py-6">
               <p
                 class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
