@@ -74,7 +74,7 @@
             class="pt-14 pb-10 flex-col sm:flex-row flex text-center justify-between"
           >
             <div class="my_hover">No Copyright © {{currentYear}} Jovylle</div>
-            <div class="my_hover"></div>
+            <div class="my_hover">Powered by NuxtJS</div>
           </div>
         </div>
       </section>
