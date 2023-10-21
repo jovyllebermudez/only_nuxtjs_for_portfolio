@@ -5,7 +5,7 @@
         <div class="text-left max-w-xl px-6">
           <h2
             class="font-general-medium
-              text-2xl text-primary-dark
+              text-2xl
               mt-8
               mb-8
             "
@@ -14,27 +14,27 @@
           </h2>
           <ul class="font-general-regular space-y-3">
             <li class="flex">
-              <i class="bx bx-laptop text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-laptop dark:text-m4  mr-4 text-2xl"></i>
               Macbook Pro 14" 2021 M1 Pro for hustle and bustle
             </li>
             <li class="flex">
-              <i class="bx bx-laptop text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-laptop dark:text-m4  mr-4 text-2xl"></i>
               Ryzen 5 3600 16GB RAM 500GB SSD For Gaming and Streaming
             </li>
             <li class="flex">
-              <i class="bx bx-laptop text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-laptop dark:text-m4  mr-4 text-2xl"></i>
               A4Tech FBX51C for Convenient Wireless Keyboard
             </li>
             <li class="flex">
-              <i class="bx bx-mouse-alt text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-mouse-alt dark:text-m4  mr-4 text-2xl"></i>
               UGREEN Mouse4000 for Wireless Mouse
             </li>
             <li class="flex">
-              <i class="bx bx-headphone text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-headphone dark:text-m4  mr-4 text-2xl"></i>
               A4Tech HU-10 - plain and classic headset
             </li>
             <li class="flex">
-              <i class="bx bx-baguette text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-baguette dark:text-m4  mr-4 text-2xl"></i>
               LOTTE Xylitol Sugar Free Chewing Gum XD to manaage anxiety
             </li>
           </ul>
@@ -42,7 +42,7 @@
         <div class="text-left max-w-xl px-6">
           <h2
             class="font-general-medium
-              text-2xl text-primary-dark
+              text-2xl
               
               mt-8
               mb-8
@@ -52,19 +52,19 @@
           </h2>
           <ul class="font-general-regular space-y-3">
             <li class="flex">
-              <i class="bx bx-code-alt text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-code-alt text-gray-500 dark:text-m4  mr-4 text-2xl"></i>
               VSCode IDE using atom dark theme
             </li>
             <li class="flex">
-              <i class="bx bx-code-alt text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-code-alt text-gray-500 dark:text-m4  mr-4 text-2xl"></i>
               MacOS Ventura 13.0 OS trying to keep using latest OS updates
             </li>
             <li class="flex">
-              <i class="bx bx-list-check text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-list-check text-gray-500 dark:text-m4  mr-4 text-2xl"></i>
               Notion/Airtable TodoList System - amazingly helpful for lazy to remember guy like me
             </li>
             <li class="flex">
-              <i class="bx bx-terminal text-gray-500  mr-4 text-2xl"></i>
+              <i class="bx bx-terminal text-gray-500 dark:text-m4  mr-4 text-2xl"></i>
               ZSH Terminal - sufficient for me
             </li>
           </ul>

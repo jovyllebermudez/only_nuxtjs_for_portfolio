@@ -23,8 +23,8 @@ fetchDataAsync();
 </script>
 <template>
   <div>
-    <div class="container mx-auto">
-      <section>
+    <div class="container mx-auto ">
+      <section class="my-5 sm:my-14">
         <div class="space-x-10 text-center ">
           <a class="underline" href="https://quickchatgpt.netlify.app/"
             >Quick Chat Bot Tool</a
@@ -35,7 +35,7 @@ fetchDataAsync();
         </div>
       </section>
       <!-- Projects grid -->
-      <section class="pt-10 sm:pt-14">
+      <section class="pt-10 sm:pt-14 my-5 sm:my-14">
         <!-- Projects grid title -->
         <div class="text-center">
           <p
@@ -44,7 +44,6 @@ fetchDataAsync();
             Projects
           </p>
         </div>
-
         <!-- Filter and search projects -->
         <div class="mt-10 sm:mt-10">
           <h3
@@ -60,16 +59,23 @@ fetchDataAsync();
             v-for="post in posts"
             :key="post._id"
             :to="'/project/'+post.slug.current"
-            class="rounded-xl shadow-lg hover:shadow-xl overflow-hidden cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+            class="rounded-xl shadow-lg hover:shadow-xl overflow-hidden cursor-pointer mb-10 sm:mb-0 dark:border-4 dark:border-m4"
             aria-label="Single Project"
           >
             <!-- <div v-if="post.mainImage" class="bg-cover bg-center h-64 w-64" :style="`background-image: url(${post.mainImage?.asset._ref});`"></div> -->
-             <div v-if="post.mainImage" class="bg-cover bg-center aspect-video w-full overflow-hidden">
+            <div class="bg-cover bg-center aspect-video w-full overflow-hidden">
               <SanityImage
+                v-if="post.mainImage"
                 :asset-id="post.mainImage.asset._ref"
                 alt="project.title"
-                class=""
+                class="bg-white"
                 auto="format"
+              />
+              <img
+                v-else
+                src="https://raw.githubusercontent.com/jovyllebermudez/static/d37ee2dee7175a22031457d711dae74922faf3be/placeholder.png"
+                alt="project.title"
+                class=" bg-white"
               />
             </div>
             <!-- <div class="rounded-t-xl overflow-hidden">
@@ -89,13 +95,11 @@ fetchDataAsync();
               />
             </div> -->
             <div class="text-center px-4 py-6">
-              <p
-                class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
-              >
+              <p class="font-general-semibold text-xl font-semibold mb-2">
                 {{ post.title }}
               </p>
               <span
-                class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
+                class="font-general-medium text-lg"
                 >{{ post.subTitle }}</span
               >
             </div>

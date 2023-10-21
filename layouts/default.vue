@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-ternary-light text-lg overflow-hidden flex flex-col tracking-wider">
-    <div class="container mx-auto px-4 max-w-6xl flex flex-col min-h-[100vh]">
+  <div
+    :class='" text-lg overflow-hidden flex flex-col tracking-wider " + (darkMode?"dark bg-ternary-dark":"bg-ternary-light")'
+  >
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col min-h-[100vh] text-primary-dark dark:text-ternary-light">
       <section class="">
         <div class="container sm:mx-auto">
           <div
@@ -9,14 +11,8 @@
             <div
               class="font-bold flex text-3xl my_hover px-2 justify-between w-full sm:w-auto"
             >
-              <div class="opacity-0 sm:hidden">
-                <button
-                  aria-label="justinvisiblebutton"
-                  id="idontknow"
-                  class="px-3 "
-                >
-                  <i class="bx bx-menu my-1"></i>
-                </button>
+              <div class="sm:hidden">
+                <DarkmodeBtn :toggleDarkMode="toggleDarkMode" />
               </div>
               <NuxtLink class="text-center" to="/"> Home </NuxtLink>
               <div class="block sm:hidden text-right">
@@ -31,28 +27,37 @@
               </div>
             </div>
             <div
-              :class="['font-bold sm:flex my-5 sm:my-0 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
+              :class="['font-bold sm:flex my-5 sm:my-0 md:space-x-10 space-x-3 divide-y sm:justify-center divide-gray-200 sm:divide-y-0 w-[100vw] shadow-lg sm:shadow-none',isMenuOpen?'block':'hidden']"
             >
               <NuxtLink
-                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex whitespace-nowrap py-3 sm:py-0"
+                class="flex_center text-xl my_hover1 inline-flex py-3 sm:py-0 whitespace-nowrap"
                 to="/about"
               >
                 About me
               </NuxtLink>
               <NuxtLink
-                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
+                class="flex_center text-xl my_hover1 inline-flex py-3 sm:py-0"
                 to="/projects"
               >
                 Projects
               </NuxtLink>
               <NuxtLink
-                class="flex_center text-xl md:px-7 px-4 my_hover1 inline-flex py-3 sm:py-0"
+                class="flex_center text-xl my_hover1 inline-flex py-3 sm:py-0"
                 to="/uses"
               >
                 Uses
               </NuxtLink>
+              <NuxtLink
+                class="flex_center text-xl my_hover1 inline-flex py-3 sm:py-0 sm:hidden"
+                to="/contact"
+              >
+                Contact
+              </NuxtLink>
             </div>
-            <div class="hidden sm:block text-base text-primary-light">
+            <div class="hidden sm:flex sm:items-center text-base text-primary-light space-x-2">
+              <div class="">
+                <DarkmodeBtn :toggleDarkMode="toggleDarkMode" />
+              </div>
               <NuxtLink class="" to="/contact">
                 <button
                   id="contactbutton"
@@ -84,12 +89,17 @@
 
 <script>
 export default {
-
   data(){
     return{
+      darkMode: false,
       currentYear: new Date().getFullYear(),
       isMenuOpen: false
     }
+  },
+  methods: {
+    toggleDarkMode() {
+      this.darkMode = !this.darkMode;
+    },
   },
 }
 </script>
