@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-10 lg:space-y-32 max-w-[1280px] mx-auto">
-    <section class="md:min-h-[60vh] flex_center" id="about">
+    <section class="md:min-h-[60vh] flex_center my-5 sm:my-10" id="about">
       <div class="container text-center space-y-10 sm:space-y-14">
         <h2
           class="text-3xl sm:text-5xl text-center font-semibold my-8 my_hover"

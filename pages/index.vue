@@ -1,8 +1,8 @@
 <template>
   <div class="space-y-10 lg:space-y-32 max-w-[1280px] mx-auto">
-    <section class="md:h-[80vh] flex_center py-8 ">
-      <div class="container mx-auto block md:flex_center">
-        <div class="px-10 md:px-0">
+    <section class="md:min-h-[80vh] flex_center py-8 ">
+      <div class="container mx-auto block lg:flex_center">
+        <div class="px-10 md:px-10">
           <LazySanityImage
             class="rounded-2xl max-h-[500px] my_hover"
             style="margin: auto 0"
@@ -15,7 +15,7 @@
             It's me, Jovylle
             <!-- {{response.data.attributes.Title}} -->
           </h1>
-          <p class="text-m4 text-xl py-3 w-[200px]">A Full-Stack Web Developer</p>
+          <p class="text-m4 dark:text-ternary-light text-xl py-3 w-[200px]">A Full-Stack Web Developer</p>
           <!-- <HelloSvg class="w-[200px] h-[100px] mx-auto" /> -->
           <!-- <button
             id="resumebutton" class="hover:line-through my_hover hover:cursor-default rounded-lg border-2 border-m1 my-4 py-1 px-3 text-sm flex items-center space-x-1 mx-auto"
@@ -46,34 +46,7 @@
         </div>
       </div>
     </section>
-    <section class="md:h-[80vh] flex_center" id="contact">
-      <div class="container my-5 sm:my-10">
-        <h2
-          class="text-3xl sm:text-5xl text-center text-primary-dark font-semibold my-8 my_hover"
-        >
-          Contact Me / Socials
-        </h2>
-        <div
-          class="flex justify-center space-x-6 my-8 items-center text-4xl text-m1"
-        >
-          <a aria-label="facebook link" href="https://www.facebook.com/twero">
-            <i class="my_hover bx bxl-facebook-circle"></i>
-          </a>
-          <a aria-label="mail me" href="mailto:jovyllebermudez@gmail.com">
-            <i class="my_hover bx bxl-gmail"></i>
-          </a>
-          <a aria-label="github link" href="https://github.com/jovyllebermudez">
-            <i class="my_hover bx bxl-github"></i>
-          </a>
-          <!-- <a href="">
-            <i class='my_hover bx bxl-dev-to'></i>
-          </a> -->
-          <a aria-label="linkedin link" href="https://www.linkedin.com/in/jovyllebermudez/">
-            <i class="my_hover bx bxl-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+    <ContactSection />
   </div>
 </template>
 <script setup>
