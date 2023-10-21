@@ -26,12 +26,13 @@ fetchDataAsync();
     <div class="container mx-auto ">
       <section class="my-5 sm:my-14">
         <div class="space-x-10 text-center ">
-          <a class="underline" href="https://quickchatgpt.netlify.app/"
-            >Quick Chat Bot Tool</a
+          <NuxtLink class="underline" to="/parallax">Parallax Effect</NuxtLink>
+          <NuxtLink class="underline" to="https://quickchatgpt.netlify.app/"
+            ><i class="bx bx-link-external"></i> Quick Chat Bot Tool</NuxtLink
           >
-          <a class="underline" href="https://theremnant.netlify.app/"
-            >Christian Blog Site</a
-          >
+          <NuxtLink class="underline" to="https://theremnant.netlify.app/"
+            ><i class="bx bx-link-external"></i> Christian Blog Site
+          </NuxtLink>
         </div>
       </section>
       <!-- Projects grid -->

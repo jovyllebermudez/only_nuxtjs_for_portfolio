@@ -24,6 +24,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@lucien144/vue3-parallaxy": "^0.1.1",
     "@nuxtjs/sanity": "^1.7.3",
     "@sanity/client": "^6.0.1",
     "boxicons": "^2.1.2"
