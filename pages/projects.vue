@@ -12,8 +12,7 @@ const query = `*[_type == "portfolioProject"] | order(publishedAt desc){
 const posts = ref([]);
 const fetchDataAsync = async () => {
   try {
-    // https://x9czj6ra.api.sanity.io/v2021-06-07/data/query/production?query=*[_type == "portfolioProject"]{_id,title,subTitle,slug,mainImage,body}
-    // const response =  await useSanityQuery(query);
+    const response =  await useSanityQuery(query);
     posts.value =  response.data._rawValue;
     console.log("posts", posts);
   } catch (error) {
@@ -31,7 +30,7 @@ fetchDataAsync();
           <NuxtLink class="underline" to="https://quickchatgpt.netlify.app/"
             ><i class="bx bx-link-external"></i> Quick Chat Bot Tool</NuxtLink
           >
-          <NuxtLink class="underline" to="https://theremnant.appcom.win/"
+          <NuxtLink class="underline" to="https://theremnant.netlify.app/"
             ><i class="bx bx-link-external"></i> Christian Blog Site
           </NuxtLink>
         </div>
