@@ -30,7 +30,7 @@ fetchDataAsync();
           <NuxtLink class="underline" to="https://quickchatgpt.netlify.app/"
             ><i class="bx bx-link-external"></i> Quick Chat Bot Tool</NuxtLink
           >
-          <NuxtLink class="underline" to="https://theremnant.netlify.app/"
+          <NuxtLink class="underline" to="https://theremnant.appcom.win/"
             ><i class="bx bx-link-external"></i> Christian Blog Site
           </NuxtLink>
         </div>
